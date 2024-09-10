@@ -13,7 +13,9 @@ public class VowelCounter {
 		int counter = 0;
 
 		for (int i = 0; i < input.length(); i++) {
-			if (vocales.contains(String.valueOf(input.charAt(i)))) { // if (vocales.contains("" + input.charAt(i))) {
+			if (vocales.contains(String.valueOf(input.charAt(i)))) {
+				// Another option would be to just concatenate an empty String
+				// if (vocales.contains("" + input.charAt(i))) {
 				counter++;
 			}
 		}
